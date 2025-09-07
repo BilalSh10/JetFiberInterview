@@ -70,7 +70,8 @@ export default function QADashboardPage() {
     const fetchFeedback = async () => {
       try {
         const res = await axios.get("/feedback");
-        setFeedback(res.data); // assuming your API returns an array
+        setFeedback(res.data);
+        console.log("Fetched feedback:", res.data);
       } catch (err) {
         console.error("Error fetching feedback:", err);
       } finally {

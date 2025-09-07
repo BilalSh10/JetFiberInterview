@@ -101,7 +101,7 @@ export default function FlatIsraelScene() {
 
       {/* Subtle grid behind nodes (slightly behind z=0 to avoid z-fighting) */}
       <gridHelper
-        args={[80, 40, "#1f2937", "#0f172a"]}
+        args={[80, 40, "#e6e6e6", "#c7c7c7"]}
         position={[0, 0, -0.1]}
       />
 

@@ -9,13 +9,6 @@ const FlatIsraelScene = dynamic(
   { ssr: false }
 );
 
-const technicians = [
-  // مثال: غيّر الحالات حسب حاجتك: available | busy | off
-  { city: "Jerusalem", label: "Tech #1", status: "available" },
-  { city: "Tel Aviv", label: "Tech #2", status: "busy" },
-  { city: "Haifa", label: "Tech #3", status: "off" },
-];
-
 export default function Lab3DPage() {
   return (
     <>
@@ -40,7 +33,7 @@ export default function Lab3DPage() {
                   </div>
                 }
               >
-                <FlatIsraelScene technicians={technicians} />
+                <FlatIsraelScene />
               </Suspense>
             </div>
           </div>

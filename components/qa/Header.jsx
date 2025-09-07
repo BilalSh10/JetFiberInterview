@@ -25,9 +25,6 @@ export default function Header() {
           <Link href="/" className="text-2xl font-semibold tracking-tight">
             جيت فايبر
           </Link>
-          <span className="ml-2 rounded-full bg-emerald-100 px-2 py-0.5 text-xs font-medium text-emerald-700 dark:bg-emerald-500/15 dark:text-emerald-300">
-            مباشر
-          </span>
         </div>
 
         {/* Right: Desktop actions */}
