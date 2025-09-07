@@ -2,6 +2,7 @@
 
 import Header from "@/components/qa/Header";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const page = () => {
   const [analyistData, setAnalyistData] = useState([]);
@@ -11,7 +12,9 @@ const page = () => {
   useEffect(() => {
     const fetchAIAnalyst = async () => {
       try {
-        const res = await axios.get("/ai-analyst");
+        const res = await axios.get(
+          "https://jetfiberfeedback.onrender.com/ai_analysis"
+        );
         setAnalyistData(res.data);
         console.log("Fetched AI analyst:", res.data);
       } catch (err) {
