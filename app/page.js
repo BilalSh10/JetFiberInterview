@@ -69,11 +69,14 @@ export default function QADashboardPage() {
   useEffect(() => {
     const fetchFeedback = async () => {
       try {
-        const res = await axios.get("/feedback");
+        const res = await axios.get(
+          "https://jetfiberfeedback.onrender.com/feedback"
+        );
         setFeedback(res.data);
         console.log("Fetched feedback:", res.data);
       } catch (err) {
         console.error("Error fetching feedback:", err);
+        setError("تعذر جلب البيانات. حاول لاحقاً.");
       } finally {
         setLoading(false);
       }

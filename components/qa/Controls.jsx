@@ -1,11 +1,7 @@
 "use client";
 import React from "react";
 
-export default function Controls({
-  query,
-  setQuery,
-  total,
-}) {
+export default function Controls({ query, setQuery, total }) {
   return (
     <div className="mx-auto max-w-7xl px-4 py-4">
       <div className="rounded-2xl border border-slate-200/60 bg-white/80 p-4 shadow-sm backdrop-blur dark:border-slate-800/60 dark:bg-slate-900/70">
